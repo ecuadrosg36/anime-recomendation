@@ -8,9 +8,10 @@ dataset:
   kaggle_dataset: anime-recommendation-database-2020
   files:
     animelist: animelist.csv
-    rating_complete: rating_complete.csv
+    rating_complete: rating_complete.csv         # si no existe lo derivamos
     anime_meta: anime.csv
-    synopsis_dir: anime_with_synopsis
+    synopsis_file: anime_with_synopsis.csv       # <— aquí el cambio
+    watching_status: watching_status.csv         # (opcional)
 
 model:
   alpha_hybrid: 0.65
@@ -19,3 +20,5 @@ model:
 evaluation:
   k_list: [5, 10, 20]
   metrics: [rmse, mae, recall, ndcg, map]
+
+

@@ -9,3 +9,4 @@ sentence-transformers>=3.0
 ipykernel
 tqdm
 pyyaml>=6.0
+kagglehub
