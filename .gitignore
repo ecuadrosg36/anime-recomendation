@@ -1,11 +1,33 @@
-__pycache__/
-*.py[cod]
-*$py.class
-.venv/
-.env/
-.ipynb_checkpoints/
+# === data (no versionar datos descargados ni procesados) ===
 data/raw/
 data/processed/
-data/external/
-.DS_Store
-Thumbs.db
+notebooks/data/
+*.parquet
+*.feather
+*.npz
+*.zip
+
+# === modelos / checkpoints / artefactos ===
+models/
+checkpoints/
+*.keras
+*.h5
+*.pt
+*.pkl
+*.pickle
+*.onnx
+
+# === Jupyter y cachés ===
+.ipynb_checkpoints/
+**/__pycache__/
+*.pyc
+
+# === entornos / config local ===
+.venv/
+venv/
+venv_*/
+.env
+.kaggle/
+kaggle.json
+
+# *.csv
