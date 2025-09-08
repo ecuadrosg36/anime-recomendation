@@ -1,0 +1,11 @@
+polars>=1.5.0
+pandas>=2.2.0
+numpy>=1.26
+scikit-learn>=1.4
+tensorflow>=2.15
+implicit>=0.7.2
+lightfm>=1.17
+sentence-transformers>=3.0
+ipykernel
+tqdm
+pyyaml>=6.0

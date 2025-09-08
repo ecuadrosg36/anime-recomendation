@@ -1,0 +1,21 @@
+paths:
+  raw_dir: data/raw/mal2020
+  processed_dir: data/processed
+  external_dir: data/external
+
+dataset:
+  kaggle_owner: hernan4444
+  kaggle_dataset: anime-recommendation-database-2020
+  files:
+    animelist: animelist.csv
+    rating_complete: rating_complete.csv
+    anime_meta: anime.csv
+    synopsis_dir: anime_with_synopsis
+
+model:
+  alpha_hybrid: 0.65
+  topk: 10
+
+evaluation:
+  k_list: [5, 10, 20]
+  metrics: [rmse, mae, recall, ndcg, map]
